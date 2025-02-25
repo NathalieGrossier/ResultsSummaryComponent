@@ -1,0 +1,46 @@
+body {
+background: hsl(241, 100%, 89%);
+display: flex;
+justify-content: center;
+flex-direction: column;
+& #main {
+        display: flex;
+        background: white;
+        justify-content: center;
+        align-items: center;
+        width: 50vh;
+        border-radius: 8px;
+        & #results {
+display: flex;
+flex-direction: column;
+        
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 8px;
+    }
+& #summary {
+
+    & #reaction {
+        background: hsl(0, 100%, 67%);
+
+    }
+
+    & #memory {
+background: hsl(39, 100%, 56%);
+    }
+
+    & #verbal {
+        background: hsl(166, 100%, 37%);
+
+
+    }
+
+    & #visual {
+        background: hsl(234, 85%, 45%);
+
+
+    }
+}
+
+}
+
+}
