@@ -1,17 +1,18 @@
 body {
-  font-family: ;
-  background: hsl(241, 100%, 89%);
+  /* font-family: ; */
+  background: hsl(221, 100%, 96%);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   /* margin: auto; */
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
  
 & #main {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   & #card_results {
     z-index: 1;
     transform: translate(16px);
@@ -94,10 +95,22 @@ padding: 20px 10px 20px 30px;
       color: hsl(234, 85%, 45%);
     }
 
-    & button {
-      background: hsl(224, 30%, 27%);
-      border-radius: 16px;
-      color: white;
+    &   #button { 
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      & button {
+        background: hsl(224, 30%, 27%);
+        border-radius: 16px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+   
+        width: 100%;
+    }
+    
+    
     }
   }
  }
@@ -109,8 +122,67 @@ padding: 20px 10px 20px 30px;
 
 @media only screen and (max-width: 375px) {
   body {
-    & #main {
-      flex-wrap: wrap;
+ 
+ 
+& #main {
+  flex-wrap: wrap;
+
+
+  & #card_results {
+    transform: translate(0px, 8px);
+
+    padding: 0;
+    
+ 
+  
+    & #note {
+     
+      }
     }
+  
+  & #card_summary {
+    transform: translate(0px, -8px);
+
+    padding: inherit;
+    
+ 
+
+    & #reaction {
+
+    }
+
+    & #memory {
+
+    }
+
+    & #verbal {
+      
+    }
+
+    & #visual {
+  
+    }
+
+    & #button {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      & button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* width: 45vh; */
+        width: 100%;
+       }
+      }
+   
+
+
   }
+ }
+}
+
+
+   
+  
 }
