@@ -93,22 +93,23 @@ body {
     font-size: 1.4rem;
     font-weight: bold;
 display: flex;
-width: 100%;
+width: 90%;
       }
 
 & #div_reaction {
   border-radius: 16px;
   display: flex;
   background: hsla(0, 100%, 67%, 0.1);
-  justify-content: center;
-      width: 100%;
+  justify-content: fit-content;
+      width: 80%;
       align-items: center;
       padding: 8px;
       padding-left: 16px;
+ 
   & #reaction {
     display: flex;
     color: hsl(0, 100%, 67%);
-    width: 100%;
+    width: 80%;
     justify-content: space-between;
     padding-left: 16px;
     
@@ -121,7 +122,7 @@ width: 100%;
   border-radius: 16px;
   display: flex;
   justify-content: center;
-    width: 100%;
+    width: 80%;
   background: hsla(39, 100%, 56%, 10%);
   align-items: center;
   padding: 8px;
@@ -141,7 +142,7 @@ width: 100%;
   border-radius: 16px;
   display: flex;
   justify-content: center;
-    width: 100%;
+    width:80%;
   background: hsla(166, 100%, 37%, 10%);
   align-items: center;
   padding: 8px;
@@ -158,11 +159,11 @@ width: 100%;
 
 
 & #div_visual {
-  border-radius: 8px;
+  border-radius: 16px;
   display: flex;
   background: hsla(234, 85%, 45%, 10%);
   justify-content: center;
-  width: 100%;
+  width: 80%;
   align-items: center;
   padding: 8px;
   padding-left: 16px;
@@ -181,16 +182,18 @@ width: 100%;
 display: flex;
 justify-content: center;
 width: 100%;
+padding-top: 16px;
 & button {
 background: hsl(224, 30%, 27%);
-border-radius: 16px;
+border-radius: 32px;
 color: white;
 display: flex;
 flex-direction: column;
 justify-content: center;
-width: 70%;
+width: 90%;
 border: none;
-padding: 8px;
+align-items: center;
+padding: 12px;
 }
 
 
