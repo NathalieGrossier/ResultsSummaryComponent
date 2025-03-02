@@ -2,16 +2,16 @@
 
 html {
   font-family: "Hanken Grotesk" ;
+  font-size: 18px;
 }
 
-.spantext {
-  color: black;
+.black {
+color: black;
 }
 
-.bold {
-  font-weight: bold;
+.lavender {
+  color : hsl(241, 100%, 89%);
 }
-
 
 body {
   /* font-family: ; */
@@ -33,30 +33,35 @@ body {
     transform: translate(16px);
     min-height: 350px;
     max-width: 50%;
-    min-width: 250px;
+    min-width: 245px;
     width: 30%;
-    height: 220px;
+    height: 210px;
     border-radius: 16px;
 
     display: flex;
     flex-direction: column;
-    color: white;
+    color: hsl(241, 100%, 89%);
     text-align: center;
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   
-    gap: 24px;
+    gap: 16px;
     /* justify-content: center; */
     align-items: center;
-    justify-content: space-around;
-
     padding: 20px;
+   
  
-  
+  & #your_result {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 16px;
+    padding-bottom: 18px;
+
+  }
     & #note {
       display: flex;
-
-      width: 115px;
-      height: 115px;
+      
+      width: 150px;
+      height: 150px;
       background: linear-gradient(
         hsla(256, 72%, 46%, 1),
         hsla(241, 72%, 46%, 0)
@@ -65,18 +70,52 @@ body {
       justify-content: center;
       text-align: center;
       align-items: center;
+      
+
+      & h2 {
+        font-size: 52px;
+        font-weight: 800;
+        color: white; 
+      }
+      & h3 {
+        font-size: 12px;
+        font-weight: 700;
+
+
+      }
 
       & .content {
+        /* position: relative; */
         position: absolute;
+
+        
       }
+    }
+
+    & #great {
+      font-size: 26px;
+      font-weight: 500;
+      color: white;
+      
+     
+      
+    }
+
+    & #higher {
+      font-size: 14px;
+      padding: 0px 25px 0px 25px;
+      line-height: 18px;
+     
+    
+
     }
   }
   & #card_summary {
     transform: translate(-16px);
-    min-width: 250px;
+    min-width: 245px;
     max-width: 50%;
     width: 30%;
-    height: 220px;
+    height: 210px;
     min-height: 350px;
     display: flex;
     flex-direction: column;
@@ -86,94 +125,105 @@ body {
     /* width: 50vh; */
     background: white;
     border-radius: 16px;
-    padding: 20px 10px 20px 40px;
+    padding: 30px 20px 10px 50px;
+   
  
   
   & #summary { 
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: bold;
 display: flex;
 width: 90%;
+margin-bottom: 12px;
+
       }
 
 & #div_reaction {
-  border-radius: 16px;
+  border-radius: 12px;
   display: flex;
   background: hsla(0, 100%, 67%, 0.1);
-  justify-content: fit-content;
-      width: 80%;
+  justify-content: center;
+      width: 85%;
       align-items: center;
-      padding: 8px;
-      padding-left: 16px;
- 
+      padding: 6px 6px 6px 12px;
+      
+     
   & #reaction {
     display: flex;
     color: hsl(0, 100%, 67%);
-    width: 80%;
+    width: 100%;
     justify-content: space-between;
-    padding-left: 16px;
-    
+        padding: 6px 6px 6px 8px;
+        font-weight: 700;
+        font-size: 14px;
     } 
   }
 
 
 
 & #div_memory {
-  border-radius: 16px;
+  border-radius: 12px;
   display: flex;
   justify-content: center;
-    width: 80%;
+    width: 85%;
   background: hsla(39, 100%, 56%, 10%);
   align-items: center;
-  padding: 8px;
-  padding-left: 16px;
+  padding: 6px 6px 6px 12px;
+  
+ 
   & #memory {
     color: hsl(39, 100%, 56%);
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-left: 16px;
+    padding: 6px 6px 6px 12px;
+    font-weight: 700;
+    font-size: 14px;
+    
+
     
     }
   }
 
 
 & #div_verbal {
-  border-radius: 16px;
+  border-radius: 12px;
   display: flex;
   justify-content: center;
-    width:80%;
+    width: 85%;
   background: hsla(166, 100%, 37%, 10%);
   align-items: center;
-  padding: 8px;
-  padding-left: 16px;
+  padding: 6px 6px 6px 12px;
+
   & #verbal {
     color: hsl(166, 100%, 37%);
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-left: 16px;
-   
+    padding: 6px 6px 6px 12px;
+    font-weight: 700;
+    font-size: 14px;
     }
   }
 
 
 & #div_visual {
-  border-radius: 16px;
+  border-radius: 12px;
   display: flex;
   background: hsla(234, 85%, 45%, 10%);
   justify-content: center;
-  width: 80%;
+  width: 85%;
   align-items: center;
-  padding: 8px;
-  padding-left: 16px;
+  padding: 6px 6px 6px 12px;
+
   & #visual { 
     color: hsl(234, 85%, 45%);
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-left: 16px;
-   
+    padding: 6px 6px 6px 12px;
+    font-weight: 700;
+    font-size: 14px;
     }
   }
 
@@ -183,6 +233,12 @@ display: flex;
 justify-content: center;
 width: 100%;
 padding-top: 16px;
+& a {
+  text-decoration: none;
+  color: white;
+}
+
+
 & button {
 background: hsl(224, 30%, 27%);
 border-radius: 32px;
@@ -194,8 +250,15 @@ width: 90%;
 border: none;
 align-items: center;
 padding: 12px;
-}
+font-weight: 700;
+margin-bottom: 16px;
 
+
+}
+& button:hover {     
+  
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));    
+}
 
 }
 
@@ -206,59 +269,103 @@ padding: 12px;
 }  
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   body {
  
  
 & #main {
   flex-wrap: wrap;
+  width: 100%;
 
 
   & #card_results {
-    transform: translate(0px, 8px);
-
+    transform: translate(0px, 0px);
     padding: 0;
-    
- 
+    width: 100%;
+    max-width: 100%;
+ border-radius: 0 0 32px 32px;
+ box-shadow: 0px 35px 5px hsla(241, 81%, 54%, 0.044);
+ height: 270px;
+ min-height: 400px;
+ & #your_result {
+  padding-top: 70px;
   
+ }
     & #note {
      
+      }
+
+      & #higher {
+        padding: 0px 60px;
+        font-size: 16px;
       }
     }
   
   & #card_summary {
-    transform: translate(0px, -8px);
-
+    transform: translate(0px, -30px);
+    width: 100%;
+    max-width: 100%;
     padding: inherit;
+    min-height: 450px;
+
     
- 
-
-    & #reaction {
-
-    }
-
-    & #memory {
-
-    }
-
-    & #verbal {
-      
-    }
-
-    & #visual {
+ & #summary {
+  padding-top: 60px;
+  padding-left: 18px;
   
+  
+ }
+
+    & #div_reaction {
+      padding: 12px 0px;
+  
+      & #reaction {
+        width: 80%;
+        font-size: 16px;}
+      
+
     }
+
+& #div_memory {
+  padding: 12px 0px;
+  & #memory {
+    width: 80%;
+    font-size: 16px;
+
+} }
+
+& #div_verbal {
+  padding: 12px 0px;
+  & #verbal {
+    width: 80%;
+    font-size: 16px;
+
+
+} }
+
+& #div_visual {
+  padding: 12px 0px;
+  
+  & #visual {
+    width: 80%;
+    font-size: 16px;
+
+ }
+}
 
     & #button {
       display: flex;
       justify-content: center;
-      width: 100%;
+      width: 90%;
+    
       & button {
         display: flex;
         flex-direction: column;
         justify-content: center;
         /* width: 45vh; */
         width: 100%;
+        padding: 18px 0px 18px 0px;
+        font-size: 18px;
        }
       }
    
